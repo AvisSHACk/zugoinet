@@ -1,0 +1,33 @@
+.User {
+    display: flex;
+    align-items: center;
+    &__username {
+        display: none;
+        margin-right: .5rem;
+        @include from(large) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__image {
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+
+    &__nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: $principal;
+        padding: 1.6rem 1.4rem;
+    }
+
+    &__item {
+        margin-bottom: 1rem;
+    }
+}

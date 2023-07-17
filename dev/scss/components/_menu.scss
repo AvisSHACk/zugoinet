@@ -1,0 +1,50 @@
+.Menu {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $principal;
+
+    @include from(large) {
+        position: static;
+        background: none;
+        width: auto;
+        margin-right: auto;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        flex: 1;
+        font-size: 1rem;
+
+        @include from(large) {
+            flex-direction: row;
+            flex: initial;
+            font-size: 1.4rem;
+            opacity: .6;
+            font-weight: 700;
+            margin-left: 2rem;
+            padding: 1rem 0;
+        }
+
+        &:hover {
+            opacity: .8;
+        }
+
+        &.active {
+            color: $accentosecond;
+
+            @include from(large) {
+                opacity: .8;
+                color: inherit;
+            }
+        }
+    }
+}

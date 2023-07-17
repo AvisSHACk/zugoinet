@@ -1,0 +1,11 @@
+.Logo {
+    height: 30px;
+    @include from(large) {
+        height: 25px;
+    }
+
+    img {
+        max-height: 100%;
+    }
+
+}

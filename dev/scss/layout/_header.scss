@@ -1,0 +1,13 @@
+.Header{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    padding: 1.2rem 0;
+    width: 100%;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative; /*Contexto del menu de usuario*/
+    }
+}
