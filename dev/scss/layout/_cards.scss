@@ -12,25 +12,33 @@
     }
 
     &__container {
-        width: 1000%;
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
+        display: flex;
+        // max-width: 90vw;
+        width: fit-content;
         gap: 16px;
+        position: relative;
+        top: 0;
+        left: 0;
+        transition: .5s ease-in-out;
+        // width: 1000%;
+        // display: grid;
+        // grid-template-columns: repeat(10, 1fr);
+        // gap: 16px;
 
-        @include from(small) {
-            width: 600%;
-        }
+        // @include from(small) {
+        //     width: 600%;
+        // }
 
-        @include from(medium) {
-            width: 400%;
-        }
+        // @include from(medium) {
+        //     width: 400%;
+        // }
 
-        @include from(large) {
-            width: 300%;
-        }
+        // @include from(large) {
+        //     width: 300%;
+        // }
 
-        @include from(x-large) {
-            width: 200%;
-        }
+        // @include from(x-large) {
+        //     width: 200%;
+        // }
     }
 }
