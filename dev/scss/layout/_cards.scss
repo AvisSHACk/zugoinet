@@ -1,5 +1,6 @@
 .Cards {
     overflow: hidden;
+    margin-bottom: 2rem;
     &__header {
         display: flex;
 
@@ -9,6 +10,12 @@
             align-items: center;
             color: $enlaces;
         }
+
+        margin-bottom: 1rem;
+    }
+
+    &__track {
+        position: relative;
     }
 
     &__container {
@@ -20,25 +27,21 @@
         top: 0;
         left: 0;
         transition: .5s ease-in-out;
-        // width: 1000%;
-        // display: grid;
-        // grid-template-columns: repeat(10, 1fr);
-        // gap: 16px;
+    }
 
-        // @include from(small) {
-        //     width: 600%;
-        // }
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        z-index: 1;
+        border-radius: 50%;
+        cursor: pointer;
+    }
 
-        // @include from(medium) {
-        //     width: 400%;
-        // }
+    .next {
+        right: 0;
 
-        // @include from(large) {
-        //     width: 300%;
-        // }
-
-        // @include from(x-large) {
-        //     width: 200%;
-        // }
+        transform: translateY(-50%) translateX(50%);
     }
 }
