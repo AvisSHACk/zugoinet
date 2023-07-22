@@ -6,10 +6,11 @@ const carrousel = (container) => {
         let trackWidth = track.offsetWidth;
         let containerCaWidth = containerCa.offsetWidth;
         let leftPosition = containerCa.style.left == "" ? 0 : parseFloat(containerCa.style.left.slice(0, -2) * - 1);
+        let cardWidth = track.querySelectorAll('.Card')[0].offsetWidth;
 
         if(btn.className == 'next') {
             if(leftPosition < (containerCaWidth - trackWidth)) {
-                leftPosition += 237 + 16;
+                leftPosition += cardWidth + 16;
                containerCa.style.left = `-${leftPosition}px` 
             } else {
                 containerCa.style.left = 0
@@ -17,7 +18,7 @@ const carrousel = (container) => {
         } else if(btn.className == 'prev') {
             if(leftPosition > 0) {
                 console.log(leftPosition);
-                leftPosition -= 237 + 16;
+                leftPosition -= cardWidth + 16;
                containerCa.style.left = `-${leftPosition}px` 
             }
         }

@@ -3,6 +3,22 @@
 *::after {
     box-sizing: border-box;
 }
+
+/*Para webkit*/
+
+:root::-webkit-scrollbar-track {
+  background-color: $secundariofirst; /*color de la barra de fondo*/
+}
+
+:root::-webkit-scrollbar-thumb {
+  background-color: $accentosecond; /*color del manejador*/
+  border-radius: 12px;
+}
+
+:root::-webkit-scrollbar {
+  width: 6px; /*ancho del scroll vertical*/
+  height: 6px; /*alto del scroll horizontal*/
+}
 html {
     font-size: 62.5%;
 }

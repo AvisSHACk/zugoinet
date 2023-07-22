@@ -1,6 +1,9 @@
 .Card {
     width: 237px;
 
+    &--big {
+        width: 490px;
+    }
     
     &__imagecontainer {
         position: relative;
@@ -9,25 +12,25 @@
         display: block;
     }
 
-    &:hover &__mask {
+    &__imagecontainer:hover &__mask {
         opacity: 1;
         border: 2px solid $tipografiaGray;
     }
 
-    &:hover &__mask--continuarviendo {
+    &__imagecontainer:hover &__mask--continuarviendo {
         background-color: rgba($principal, .9);
         padding: 1rem 1.2rem 1.1rem 1.2rem;
     }
 
     &__image {
         
-        transform: scale(1.1);
+        transform: scale(1.04);
         transition: transform .3s;
         // height: 100%;
         // object-fit: cover;
     }
 
-    &:hover &__image {
+    &__imagecontainer:hover &__image {
         transform: scale(1);
     }
 
@@ -50,7 +53,7 @@
             background-color: rgba($principal, .2);
             transition: background-color .3s, padding .3s, border .3s;
             opacity: 1;
-            padding: 1rem 1rem 0 1rem;
+            padding: 1rem .4rem 0 .4rem;
         }
     }
 
@@ -61,6 +64,12 @@
 
     &__title {
         margin-bottom: .6rem;
+
+        &--continuarviendo {
+            margin-top: .6rem;
+            font-size: 1.1rem;
+            color: $tipografiaGray;
+        }
     }
 
     &__categorias {
@@ -98,6 +107,8 @@
     &__time {
         width: 100%;
         margin-top: auto;
+        position: relative;
+        bottom: -2px;
     }
 
     &__play--continuarviendo {
@@ -111,7 +122,7 @@
     
 
     &__bar {
-        background-color: rgba(35,37,43,.6);
+        background-color: $secundariofirst;
         border-radius: 12px;
         height: 5px;
         width: 100%;
@@ -127,8 +138,8 @@
         opacity: 0;
     }
 
-    &:hover &__play--continuarviendo,
-    &:hover &__minutes {
+    &__imagecontainer:hover &__play--continuarviendo,
+    &__imagecontainer:hover &__minutes {
         opacity: 1;
     }
 
@@ -137,5 +148,9 @@
         border-radius: 12px;
         height: 100%;
         width: 30%;
+    }
+
+    &__numbercap {
+        font-size: 1.4rem;
     }
 }
