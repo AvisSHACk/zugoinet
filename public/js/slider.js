@@ -32,19 +32,19 @@ const onSlide = (container, i, sliders, prevItem, buttons) => {
 
   // document.querySelectorAll(`.${container.className}__pagina`)[0].click()
   
-  // setInterval(() => {
-  //   if (i === sliders.length - 1) {
-  //     i = 0;
-  //     prevItem = sliders[sliders.length - 1]
-  //   } else {
-  //     i++;
-  //     prevItem = sliders[i - 1];
-  //   }
+  setInterval(() => {
+    if (i === sliders.length - 1) {
+      i = 0;
+      prevItem = sliders[sliders.length - 1]
+    } else {
+      i++;
+      prevItem = sliders[i - 1];
+    }
 
-  //   document.querySelectorAll(`.${container.className}__pagina`)[i].click()
-  //   // sliders[i].style.display = 'block';
-  //   // prevItem.style.display = 'none';
-  // }, 5000)
+    document.querySelectorAll(`.${container.className}__pagina`)[i].click()
+    // sliders[i].style.display = 'block';
+    // prevItem.style.display = 'none';
+  }, 5000)
 };
 
 

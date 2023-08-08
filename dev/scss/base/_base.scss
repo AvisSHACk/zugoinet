@@ -60,3 +60,8 @@ img {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
+input, button, textarea, select {
+    border: 0;
+    outline: 0;
+}

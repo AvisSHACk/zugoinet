@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zugoi.net | Anime online 100% Gratis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="Header">
+        <div class="Header__container l-container">
+            <h1 class="Logo">
+                <a href="#">
+                    <img src="img/logos/logo.png" alt="Zugoi" title="Zugoi.net">
+                </a>
+            </h1>
+    
+            <nav class="Menu">
+                <ul>
+                    <li class="Menu__item active"><span class="material-icons-sharp">home</span><a href="#" class="Menu__link">INICIO</a></li>
+                    <li class="Menu__item"><span class="material-icons-sharp">search</span><a href="#" class="Menu__link">BUSQUEDAD</a></li>
+                    <li class="Menu__item"><span class="material-icons-sharp">playlist_play</span><a href="#" class="Menu__link">MIS LISTAS</a></li>
+                </ul>
+            </nav>
+    
+            <div class="User">
+                <p class="User__username"><span class="material-icons-sharp">notifications</span> usuario</p>
+                <div class="User__image">
+                    <img src="img/user.jpg" alt="">
+                </div>
+                <span class="User__arrow material-icons-sharp">expand_more</span>
+
+                <div class="User__nav">
+                    <ul>
+                        <li class="User__item"><a href="#" class="User__link">Mi cuenta</a></li>
+                        <li class="User__item"><a href="#" class="User__link">Cerrar sesion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="l-container">
+            <div class="Filters">
+                <form action="" class="Form">
+                    <button class="Form__button--search">
+                        <span class="material-icons-sharp">
+                            search
+                        </span>
+                    </button>
+                    <input class="Form__input" type="search" name="search" id="search" placeholder="Busca series, peliculas o categorias">
+                    <select class="Form__select" id="">
+                        <option value="">Popularidad</option>
+                        <option value="">En emision</option>
+                    </select>
+                        
+                </form>
+                <div class="Category">
+                    <p class="Category__title">
+                        <span class="material-icons-sharp">
+                            slideshow
+                        </span>
+                        Formato
+                    </p>
+                    <div class="Category__container">
+                        <a href="#" class="Category__item active">Todos</a>
+                        <a href="#" class="Category__item">Series</a>
+                        <a href="#" class="Category__item">Peliculas</a>
+                    </div>
+                </div>
+
+                <div class="Category">
+                    <p class="Category__title">
+                        <span class="material-icons-sharp">
+                            slideshow
+                        </span>
+                        Idioma
+                    </p>
+                    <div class="Category__container">
+                        <a href="#" class="Category__item active">Todos</a>
+                        <a href="#" class="Category__item">Subtitulados</a>
+                        <a href="#" class="Category__item">Destacados</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="Footer">
+        <div class="Footer__container l-container">
+            <div class="Footer__socials">
+                <span></span>
+            </div>
+            <div class="Footer__right">
+                <p class="Footer__copy">Ellation, LLC. Todos los derechos reservados</p>
+                <nav class="Footer__nav">
+                    <a href="#" class="Footer__navitem">Acerca de Crunchiroll</a>
+                    <a href="#" class="Footer__navitem">Ayuda</a>
+                    <a href="#" class="Footer__navitem">Terminos</a>
+                    <a href="#" class="Footer__navitem">Privacidad</a>
+                    <a href="#" class="Footer__navitem">Nuestras Aplicaciones</a>
+                </nav>
+            </div>
+
+        </div>
+    </footer>
+    <script type="module" src="js/scripts.js"></script>
+</body>
+</html>

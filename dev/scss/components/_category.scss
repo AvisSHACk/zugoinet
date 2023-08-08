@@ -1,0 +1,28 @@
+.Category {
+    margin-left: 2rem;
+    &, &__title {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        font-weight: 700;
+    }
+    &__container {
+        margin-left: 1rem;
+        display: flex;
+        gap: .5rem;
+    }
+
+    &__item {
+        background-color: $secundariofirst;
+        padding: 1rem 1.5rem;
+        border-radius: 20px;
+        display: block;
+        opacity: .5;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}

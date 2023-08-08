@@ -15,8 +15,8 @@
 @import "layout/banner";
 @import "layout/main";
 @import "layout/cards";
+@import "layout/filters";
 @import "layout/footer";
-@import "layout/forms";
 
 //componentes
 @import "components/logo";
@@ -24,3 +24,5 @@
 @import "components/user";
 @import "components/banner";
 @import "components/card";
+@import "components/form";
+@import "components/category";
