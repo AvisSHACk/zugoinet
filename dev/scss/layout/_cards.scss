@@ -1,6 +1,28 @@
 .Cards {
     overflow: hidden;
     margin-bottom: 4rem;
+
+    &--category &__container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 350px;
+        grid-auto-rows: 150px;
+        gap: 1.6rem;
+        width: auto;
+
+        @include from(small) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include from(medium) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include from(large) {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+
     &__header {
         display: flex;
 
