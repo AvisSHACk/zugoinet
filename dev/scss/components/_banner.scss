@@ -7,6 +7,10 @@
         height: 95vh;
     }
 
+    &--serie &__item {
+        display: block;
+    }
+
     &__item {
         position: absolute;
         top: 0;
@@ -90,6 +94,7 @@
     &__stars {
         display: flex;
         justify-content: center;
+        align-items: center;
 
         @include from(x-large) {
             justify-content: flex-start;
@@ -100,12 +105,13 @@
         margin-top: 2rem;
     }
 
+    &--serie &__calificaciones {
+        display: flex;
+    }
+
     &__calificaciones {
         margin-bottom: 1rem;
-
-        @include from(x-large) {
-            display: none;
-        }
+        display: none;
     }
     
     &__calificacion {
@@ -137,13 +143,14 @@
         border-radius: 8px;
     }
 
+    &--serie &__reseñas,
+    &--serie &__description {
+        display: block;
+    }
+
     &__reseñas,
     &__description {
         display: none;
-
-        @include from(x-large) {
-            display: block;
-        }
     }
 
     &__description {
@@ -151,6 +158,11 @@
             margin-top: 2rem;
             margin-bottom: 2rem;
         }
+    }
+
+    &--serie &__reseñas{
+        display: flex;
+        align-items: center;
     }
 
     &__buttons {

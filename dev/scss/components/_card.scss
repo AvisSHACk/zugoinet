@@ -8,11 +8,24 @@
     &--category {
         width: auto;
     }
+
+    &__imagecontainer {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        display: block;
+        border: 2px solid transparent;
+        transition: border .3s;
+    }
     
     &--category &__imagecontainer,
     &--category &__image {
         height: 100%;
 
+    }
+
+    &--category &__imagecontainer {
+        border: 2px solid $secundariofirst;
     }
 
     &--category &__image {
@@ -23,36 +36,32 @@
         align-items: flex-end;
         background: none;
         background-image: linear-gradient(0deg,#17181c,rgba(23,24,28,.4) 50%,#17181c);
+        background: linear-gradient(0deg, #17181c, transparent);
         padding-bottom: 1rem;
         padding-left: 1.2rem;
         opacity: 1;
-        transition: opacity .3s, border .3s;
-
+        transition: opacity .3s;
         p {
             font-weight: 700;
             font-size: 1.6rem;
         }
     }
 
-    &--category &__mask:hover {
-        opacity: 0;
-    }
-    
-    &__imagecontainer {
-        position: relative;
-        border-radius: 10px;
-        overflow: hidden;
-        display: block;
+    &__imagecontainer:hover {
+        border: 2px solid $tipografiaGray;
     }
 
     &__imagecontainer:hover &__mask {
         opacity: 1;
-        border: 2px solid $tipografiaGray;
     }
 
     &__imagecontainer:hover &__mask--continuarviendo {
         background-color: rgba($principal, .9);
         padding: 1rem 1.2rem 1.1rem 1.2rem;
+    }
+
+    &--category &__mask:hover {
+        opacity: 0;
     }
 
     &__image {
@@ -75,16 +84,13 @@
         width: 100%;
         height: 100%;
         padding: 1.2rem 1.4rem;
-        // background-color: rgb($fondosecond, .2);
         background-color: rgba($principal, .9);
-        transition: opacity .3s, border .3s;
+        transition: opacity .3s;
         opacity: 0;
-        border: 2px solid transparent;
-        border-radius: 10px;
 
         &--continuarviendo {
             background-color: rgba($principal, .2);
-            transition: background-color .3s, padding .3s, border .3s;
+            transition: background-color .3s, padding .3s;
             opacity: 1;
             padding: 1rem .4rem 0 .4rem;
         }

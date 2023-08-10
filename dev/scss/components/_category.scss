@@ -2,9 +2,9 @@
     margin-left: 2rem;
     display: none;
 
-    // @include from(x-large) {
-    //     display: flex;
-    // }
+    @include from(x-large) {
+        display: flex;
+    }
 
     &__title {
         display: flex;
