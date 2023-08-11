@@ -103,6 +103,7 @@
 
     &__etiquetas {
         margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     &--serie &__calificaciones {
@@ -155,7 +156,6 @@
 
     &__description {
         @include from(x-large) {
-            margin-top: 2rem;
             margin-bottom: 2rem;
         }
     }
