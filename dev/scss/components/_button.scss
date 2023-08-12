@@ -1,6 +1,15 @@
 .Buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
+    justify-content: space-between;
+    &--banner {
+        justify-content: center;
+
+        @include from(x-large) {
+            justify-content: flex-start;
+        }
+    }
 }
 
 .Button {

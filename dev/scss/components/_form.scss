@@ -5,6 +5,27 @@
         color: $tipografiaGray;
     }
 
+    &--add-list {
+        width: 95%;
+        max-width: 400px;
+        padding: 3rem 2rem;
+        flex-direction: column;
+        gap: 3rem;
+        background-color: $principal;
+
+        // @include from($small) {}
+    }
+
+    &__containerButtons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &--add-list &__input {
+        padding: 1.5rem;
+        border-radius: 20px;
+    }
+
     &__input {
         background-color: $secundariosecond;
         border: 2px solid $secundariofirst;

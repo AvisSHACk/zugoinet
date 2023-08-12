@@ -1,11 +1,9 @@
 .Filters {
     display: flex;
-    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
     margin-bottom: 2rem;
-    @include from(x-large) {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+    justify-content: space-between;
     
 }

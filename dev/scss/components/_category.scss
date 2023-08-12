@@ -1,9 +1,8 @@
 .Category {
-    margin-left: 2rem;
-    display: none;
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     @include from(x-large) {
-        display: flex;
     }
 
     &__title {
@@ -15,8 +14,8 @@
         font-weight: 700;
     }
     &__container {
-        margin-left: 1rem;
         display: flex;
+        flex-wrap: wrap;
         gap: .5rem;
     }
 
