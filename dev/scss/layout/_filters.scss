@@ -1,9 +1,12 @@
 .Filters {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    align-items: center;
     margin-bottom: 2rem;
-    justify-content: space-between;
+    
+    &, &__categories {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
     
 }

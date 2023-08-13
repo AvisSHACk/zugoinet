@@ -41,7 +41,7 @@ const onSlide = (container, i, sliders, prevItem, buttons) => {
       prevItem = sliders[i - 1];
     }
 
-    document.querySelectorAll(`.${container.className}__pagina`)[i].click()
+    // document.querySelectorAll(`.${container.className}__pagina`)[i].click()
     // sliders[i].style.display = 'block';
     // prevItem.style.display = 'none';
   }, 5000)

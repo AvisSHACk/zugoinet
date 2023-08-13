@@ -1,8 +1,9 @@
 .Banner {
     overflow: hidden;
-    height: 100vh;
-    
-    @include from(x-large) {
+    position: relative;
+    height: 500px;
+
+    @include from(large) {
         position: relative;
         height: 95vh;
     }
@@ -35,7 +36,7 @@
     figure {
         position: relative;
 
-        @include from(x-large) {
+        @include from(large) {
             position: static;
         }
     }
@@ -62,7 +63,11 @@
     }
 
     &__info {
-        @include from(x-large) {
+
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+        @include from(large) {
             width: 50%;
         }
     }
@@ -72,7 +77,7 @@
         max-height: 120px;
         max-width: 100%;
 
-        @include from(x-large) {
+        @include from(large) {
             max-height: 150px;
         }
     }
@@ -83,7 +88,7 @@
         max-height: 100%;
         width: auto;
 
-        @include from(x-large) {
+        @include from(large) {
             margin: 0;
         }
     }
@@ -96,7 +101,7 @@
         justify-content: center;
         align-items: center;
 
-        @include from(x-large) {
+        @include from(large) {
             justify-content: flex-start;
         }
     }
@@ -131,7 +136,7 @@
         margin-bottom: 1rem;
         font-size: 1.4rem;
 
-        @include from(x-large) {
+        @include from(large) {
             margin-bottom: 2rem;
             display: none;
         }
@@ -155,7 +160,7 @@
     }
 
     &__description {
-        @include from(x-large) {
+        @include from(large) {
             margin-bottom: 2rem;
         }
     }
@@ -172,7 +177,7 @@
         flex-wrap: wrap;
         gap: 1rem .6rem;
 
-        @include from(x-large) {
+        @include from(large) {
             justify-content: flex-start;
         }
     }

@@ -1,4 +1,3 @@
-
 const openCreateList = (button) => {
     button.addEventListener('click', e => {
         e.preventDefault();
@@ -8,7 +7,7 @@ const openCreateList = (button) => {
                 <h4>Nueva lista</h4>
                 <input class="Form__input" placeholder="Nombre de la lista"/>
                 <div class="Buttons">
-                    <button class="Button Button--secondary">
+                    <button class="Button Button--secondary" id="cancelar-lista">
                         <span class="material-icons-sharp">
                             close
                         </span>                    
@@ -27,6 +26,11 @@ const openCreateList = (button) => {
         ContainerForm.classList.add("Shadow")
         document.body.style.overflow = "hidden";
         document.body.appendChild(ContainerForm);
+
+        document.querySelector('#cancelar-lista').addEventListener('click', () => {
+            document.body.style.overflow = "hidden";
+            ContainerForm.remove();
+        });
 
         //Close model
     })
