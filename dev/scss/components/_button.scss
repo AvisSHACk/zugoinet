@@ -3,11 +3,38 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-between;
+    align-items: center;
     &--banner {
+        align-items:stretch;
         justify-content: center;
-
+        gap: 0;
+        width: 100%;
         @include from(large) {
             justify-content: flex-start;
+        }
+
+        .Button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+            border-radius: 0;
+            font-size: 1rem;
+            border: none;
+            padding: .2rem 1.8rem;
+
+            &:nth-child(2) {
+                order: -1;
+            }
+            p {
+                @include from(large) {
+                    flex-direction: row;
+                }
+            }
+
+            &--secondary {
+                background: $fondofirst;
+            }
         }
     }
 }
