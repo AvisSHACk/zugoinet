@@ -6,7 +6,7 @@
 
     @include from(large) {
         position: relative;
-        height: 95vh;
+        height: 550px;
     }
 
     &--serie &__item {
@@ -32,6 +32,10 @@
               opacity: 1;
             }
           }
+
+        @include from(large) {
+            height: 100%;
+        }
     }
 
     figure {
@@ -43,8 +47,11 @@
         }
     }
 
-    &__mask,
     &__container {
+
+    }
+
+    &__mask{
         position: absolute;
         top: 0;
         width: 100%;
@@ -52,7 +59,12 @@
     }
 
     &__mask {
-        background-image: linear-gradient(0deg,rgba(#17181c, 1) 13%, rgba(#17181c,0.1) 100%);
+        // background-image: linear-gradient(0deg,rgba(#17181c, 1) 13%, rgba(#17181c,0.1) 100%);
+        background-image: linear-gradient(0deg,rgba(#17181c, 1) 13%, transparent, rgba(#17181c, 1));
+
+        @include from(large) {
+            background-image: linear-gradient(0deg,rgba(#17181c, 1) 0%, transparent, rgba(#17181c, 1));
+        }
         // background: linear-gradient(0deg, rgba(#17181c, 1) 0%, rgba(#17181c,0.1) 100%);
         
     }
@@ -66,16 +78,22 @@
         bottom: 0;
         display: flex;
         align-items: flex-end;
+        // @include from(large) {
+        //     align-items: center;
+        // }
     }
 
     &__info {
-        @include from(large) {
-            width: 60%;
-        }
 
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 2rem;
+        @include from(large) {
+            width: 50%;
+            align-items: flex-start;
+            margin-bottom: 8rem;
+        }
     }
 
     &__title {
@@ -112,17 +130,11 @@
         }
     }
 
-    &__etiquetas {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
     &--serie &__calificaciones {
         display: flex;
     }
 
     &__calificaciones {
-        margin-bottom: 1rem;
         display: none;
     }
     
@@ -138,8 +150,6 @@
     }
     
     &__categorias {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
         font-size: 1.4rem;
 
         @include from(large) {
@@ -167,7 +177,7 @@
 
     &__description {
         @include from(large) {
-            margin-bottom: 2rem;
+            display: block;
         }
     }
 
@@ -178,12 +188,12 @@
 
     &__buttons {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
-        gap: 1rem .6rem;
-
+        align-items:stretch;
+        justify-content: center;
+        width: 100%;
         @include from(large) {
+            gap: 1rem;
             justify-content: flex-start;
         }
     }
@@ -220,6 +230,10 @@
         justify-content: center;
         position: absolute;
         bottom: 0;
+
+        @include from(large) {
+            bottom: 5%;
+        }
     }
 
     &__pagina {

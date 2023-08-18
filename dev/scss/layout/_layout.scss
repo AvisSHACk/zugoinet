@@ -8,6 +8,10 @@
 
 .l-container--banner {
     width: 100%;
+
+    @include from(large) {
+        width: 93%;
+    }
 }
 
 .l-container--row {
