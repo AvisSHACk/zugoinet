@@ -19,6 +19,11 @@
     &__containerButtons {
         display: flex;
         justify-content: space-between;
+
+        &--addlist {
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
     }
 
     &--add-list &__input {

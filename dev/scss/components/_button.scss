@@ -8,7 +8,11 @@
     padding: 0.8rem 1.8rem;
     border-radius: 30px;
     cursor: pointer;
-    
+    width: 100%;
+
+    @include from(large) {
+        width: auto;
+    }
     &--banner {
         flex-direction: column;
         flex: 1;
@@ -18,6 +22,7 @@
             flex-direction: row;
             flex: initial;
             border-radius: 30px;
+            width: auto;
         }
     }
     

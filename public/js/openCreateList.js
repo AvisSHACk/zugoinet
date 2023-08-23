@@ -6,7 +6,7 @@ const openCreateList = (button) => {
             <form class="Form Form--add-list">
                 <h4>Nueva lista</h4>
                 <input class="Form__input" placeholder="Nombre de la lista"/>
-                <div class="Buttons">
+                <div class="Form__containerButtons Form__containerButtons--addlist">
                     <button class="Button Button--secondary" id="cancelar-lista">
                         <span class="material-icons-sharp">
                             close
