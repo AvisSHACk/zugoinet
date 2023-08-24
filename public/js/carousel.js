@@ -8,14 +8,14 @@ const carrousel = (container) => {
         let leftPosition = containerCa.style.left == "" ? 0 : parseFloat(containerCa.style.left.slice(0, -2) * - 1);
         let cardWidth = track.querySelectorAll('.Card')[0].offsetWidth;
 
-        if(btn.className == 'next') {
+        if(btn.className.includes('next')) {
             if(leftPosition < (containerCaWidth - trackWidth)) {
                 leftPosition += cardWidth + 16;
                containerCa.style.left = `-${leftPosition}px` 
             } else {
                 containerCa.style.left = 0
             }
-        } else if(btn.className == 'prev') {
+        } else if(btn.className.includes('prev')) {
             if(leftPosition > 0) {
                 console.log(leftPosition);
                 leftPosition -= cardWidth + 16;

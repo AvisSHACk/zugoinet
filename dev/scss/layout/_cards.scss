@@ -60,9 +60,7 @@
         background-color: rgba($fondofirst, .5);
         color: rgba($tipografiaWhite, 0);
         transition: color, .3s;
-        & span {
-            font-size:4rem;
-        }
+        font-size:4rem;
 
         &:hover {
             color: rgba($tipografiaWhite, 1);
